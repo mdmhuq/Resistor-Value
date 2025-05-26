@@ -1,11 +1,11 @@
 ## Find the value of resistor
 
 ### Arguments
-`-d1,--digit1` : "Color of 1st Band"
-`-d2,--digit2` : "Color of 2nd Band"
-`-d3,--digit3` : "Color of 3rd Band"
-`-m,--multiplier` : "Color of Multiplier Band"
-`-t,--tolerance` : "Color of Tolerance Band"
+#### `-d1,--digit1` : "Color of 1st Band"
+#### `-d2,--digit2` : "Color of 2nd Band"
+#### `-d3,--digit3` : "Color of 3rd Band"
+#### `-m,--multiplier` : "Color of Multiplier Band"
+#### `-t,--tolerance` : "Color of Tolerance Band"
 
 ### Example 
 ```python
