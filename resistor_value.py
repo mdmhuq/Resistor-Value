@@ -61,20 +61,21 @@ def resistor_value():
         print("Incorrect Digit Color, Please check the color again.")
 
     if choice.digit3.lower() in digit_dict.keys():
-        resistor_val+=str(digit_dict[choice.digit2.lower()])
+        resistor_val+=str(digit_dict[choice.digit3.lower()])
     else:
         print("Incorrect Digit Color, Please check the color again.")
 
-    if choice.multiplier.lower() in multiplier_dict.keys() and multiplier_dict[choice.multiplier.lower()] != "1":
-        resistor_val+="*"+multiplier_dict[choice.multiplier]
+    if choice.multiplier.lower() in multiplier_dict.keys():
+        if multiplier_dict[choice.multiplier.lower()] != "1":
+            resistor_val+="*"+multiplier_dict[choice.multiplier]
     else:
         print("Incorrect Multiplier Color, Please check the color again.")
 
 
     if choice.tolerance.lower() == "brown":
-        resistor_val+=" +/- 2%"
+        resistor_val+=" +/- 1%"
     elif choice.tolerance.lower() == "red":
-        resistor_val+=" +/- 10%"
+        resistor_val+=" +/- 2%"
     elif choice.tolerance.lower() == "gold":
         resistor_val+=" +/- 5%"
     elif choice.tolerance.lower() == "silver":
